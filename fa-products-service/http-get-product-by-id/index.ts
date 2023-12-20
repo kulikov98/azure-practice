@@ -8,7 +8,6 @@ const httpTrigger: AzureFunction = async function (
   context.log("HTTP trigger function processed a request.");
   const id = req.params.id;
   const product = products.find(p => p.id === id);
-  console.log(req);
 
   context.res = {
     // status: 200, /* Defaults to 200 */
